@@ -1,0 +1,32 @@
+$primary-font: 'Playfair Display', serif, Arial, Helvetica;
+$secondary-font: 'Montserrat', sans-serif, Arial, Helvetica;
+$primary-color: #000;
+$secondary-color: #fff;
+
+hr {
+  margin: 0;
+  padding: 0;
+  opacity: 100%;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Set text color based on bg
+@function set-text-color($color) {
+  @if(lightness($color) > 70) {
+    @return $primary-color;
+  } @else {
+    @return $secondary-color;
+  }
+}
+
+// Set background & text color 
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}

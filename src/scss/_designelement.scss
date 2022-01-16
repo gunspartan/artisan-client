@@ -1,0 +1,35 @@
+.DesignElement {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  h1 {
+    font-size: 15rem;
+  }
+
+  &.craftsmanship {
+    bottom: 5%;
+    left: -5%;
+    opacity: 3%;
+
+    &.about {
+      z-index: 1;
+      left: 0;
+      color: #fff;
+    }
+  }
+
+  &.quality {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    opacity: 3%;
+    text-align: end;
+  }
+}
+

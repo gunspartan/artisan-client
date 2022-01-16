@@ -1,0 +1,74 @@
+@import "contactpageinputs";
+
+.ContactPage {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding-bottom: 5rem;
+
+  .contact-title {
+    padding: 2rem 0;
+  }
+  .contact-content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    .contact-subheading {
+      padding: 2rem;
+      text-align: center;
+      h1 {
+        text-decoration: underline;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-family: $secondary-font;
+        font-size: 1.2rem;
+      }
+    }
+    .contact-form-container {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+
+      .submit-button {
+        margin-left: auto;
+        margin-top: 3rem;
+        background: none;
+        border: none;
+        outline: none;
+        color: $secondary-color;
+        cursor: pointer;
+        .btn-submit {
+          font-family: $primary-font;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          h1 {
+            font-size: 1.4rem;
+            padding-right: 8rem;
+          }
+          i {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 576px) {
+//   .ContactPage {
+//     padding: auto;
+//     margin: auto;
+//     width: 100%;
+//   }
+//   .contact-form-container {
+//     width: 100%;
+
+//     form {
+//       width: 100%;
+//     }
+//   }
+// }

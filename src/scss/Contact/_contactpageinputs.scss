@@ -1,0 +1,76 @@
+.question {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+  h2.errors {
+    font-size: 1rem;
+    color: #d1345b;
+    font-family: $secondary-font;
+    padding-bottom: 0.5rem;
+  }
+
+  .radios {
+    display: flex;
+    justify-content: space-around;
+  }
+  .radio-wrapper {
+    width: 100%;
+    margin: 0.25rem;
+    .radio {
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      font-family: $secondary-font;
+      color: $primary-color;
+      background-color: #fff;
+      margin: auto;
+      width: 100%;
+      text-align: center;
+      border: 1px solid transparent;
+    }
+
+    &:hover input ~ .radio {
+      background-color: #ccc;
+    }
+  }
+
+  .radio-wrapper input:checked ~ .radio {
+    background-color: #353535;
+    color: #fff;
+    border: 1px solid $secondary-color;
+  }
+
+  textarea {
+    font-family: $secondary-font;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding: 1rem;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 1.2rem;
+      font-family: $secondary-font;
+      margin-bottom: 0.6rem;
+    }
+
+    input {
+      padding: 1rem;
+      font-family: $secondary-font;
+      line-height: 1.4rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .radios {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,36 @@
+.Nav {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-size: 24px;
+  position: relative;
+  .container-fluid {
+    .logo {
+      img {
+        height: 32px;
+      }
+    }
+    .navbar-collapse {
+      .navbar-nav {
+        .active {
+          text-decoration: underline;
+          color: set-text-color($secondary-color);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  @include set-background(darken($secondary-color, 5%));
+}

@@ -1,0 +1,39 @@
+@import "portfolioitem";
+
+.Portfolio-inner-title {
+  padding: 2rem 0;
+}
+
+.Portfolio-inner-content {
+  margin-top: 5rem;
+}
+
+.PortfolioItem {
+  margin: auto;
+  margin-bottom: 4rem;
+  width: 80%;
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    text-transform: uppercase;
+    h1 {
+      font-size: 1.5rem;
+    }
+    .PortfolioItem-image {
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.Portfolio {
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 992px) {
+  .PortfolioItem {
+    width: 100%;
+  }
+}

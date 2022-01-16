@@ -1,0 +1,36 @@
+.HomeEnd {
+  max-width: 1920px;
+  margin-top: 5rem;
+  position: relative;
+  z-index: 1;
+  padding: 10rem;
+  color: $secondary-color;
+}
+
+.home-content {
+  z-index: 1;
+}
+
+.home-end-text {
+  h1 {
+    text-transform: uppercase;
+  }
+  p {
+    margin-top: 2rem;
+    font-family: $secondary-font;
+    line-height: 2.6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .HomeEnd {
+    text-align: center;
+    margin-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .quote-btn {
+    margin-top: 5rem;
+  }
+}

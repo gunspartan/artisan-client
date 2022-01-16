@@ -1,0 +1,128 @@
+@import "post";
+
+.blog-title {
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+
+/** Pinned Posts **/
+.pinned-post-card {
+  height: 100%;
+  min-width: 280px;
+  img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .PinnedPost-title {
+    font-family: $primary-font;
+    text-transform: uppercase;
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .PinnedPost-content {
+    font-family: $secondary-font;
+    h1 {
+      font-size: 1.3rem;
+      text-decoration: underline;
+      font-family: $primary-font;
+    }
+  }
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+/** Regular Posts **/
+.blog-posts {
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+
+  .blog-card-container {
+    margin-bottom: 2rem;
+  }
+
+  .blog-post-card {
+    min-width: 280px;
+    height: 100%;
+    position: relative;
+    .post-img {
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+
+    .blog-post-content {
+      padding-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      
+
+      .blog-post-title {
+        text-transform: uppercase;
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+      .blog-post-desc {
+        font-family: $secondary-font;
+        h1 {
+          font-size: 1.3rem;
+          text-decoration: underline;
+          font-family: $primary-font;
+        }
+      }
+
+      .blog-post-details {
+        margin: auto;
+        width: 92%;
+        position: absolute;
+        bottom: 0;
+        font-family: $secondary-font;
+        display: flex;
+        justify-content: space-between;
+
+        .learn-more {
+          display: flex;
+          p {
+            text-transform: uppercase;
+            padding-right: 2rem;
+          }
+          i {
+            padding-top: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.posts-separator {
+  margin: 2rem 0;
+  opacity: 70%;
+}
+
+@media (max-width: 1200px) {
+  .PinnedPost-img {
+    img {
+      height: 250px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  // .blog-posts {
+  //   padding: 1.2rem 0;
+  // }
+  .pinned-card-container {
+    margin-bottom: 2rem;
+  }
+}

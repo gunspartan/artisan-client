@@ -17,6 +17,7 @@ export default function PortfolioPreview() {
       try {
         const response = await axios.get("/api/portfolios");
         setPortfolio(response.data);
+        console.log(response.data.thumbnail);
       } catch (error) {
         console.log(error);
       }
@@ -37,7 +38,7 @@ export default function PortfolioPreview() {
             <li key={index} className='hex'>
               <div className='hexIn'>
                 <div className='hexLink'>
-                  <img src={`/api/${item.thumbnail.url}`} alt={item.title} />
+                  <img src={item.thumbnail} alt={item.title} />
                 </div>
               </div>
             </li>

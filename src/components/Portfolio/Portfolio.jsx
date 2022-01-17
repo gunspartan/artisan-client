@@ -37,8 +37,8 @@ export default function Portfolio() {
         <hr />
       </div>
       <div className='Portfolio-inner-content'>
-        {portfolio.map((item) => {
-          return <PortfolioItem key={item.id} id={item.id} title={item.title} img={`/api/${item.thumbnail.url}`} />;
+        {portfolio.map((item, index) => {
+          return <PortfolioItem key={index} id={item.id} title={item.title} img={item.thumbnail} />;
         })}
       </div>
     </div>

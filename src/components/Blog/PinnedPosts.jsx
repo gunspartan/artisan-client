@@ -10,7 +10,7 @@ export default function PinnedPosts({ posts, loading }) {
     if (post.image != null) {
       return (
         <div className='PinnedPost-img'>
-          <img src={`/api/${post.image.url}`} alt={post.title} className='card-img-top' />
+          <img src={post.image} alt={post.title} className='card-img-top' />
         </div>
       );
     }

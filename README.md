@@ -40,19 +40,8 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -61,6 +50,8 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+A website I built as a freelancing gig for a local kitchen renovation company.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -84,7 +75,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - gunhwang99@gmail.com
+Gunn Hwang - gunhwang99@gmail.com
 
 Project Link: [https://github.com/gunspartan/artisan-client](https://github.com/gunspartan/artisan-client) | [https://artisan-online-client.herokuapp.com](https://artisan-online-client.herokuapp.com)
 

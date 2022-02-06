@@ -28,7 +28,7 @@ export default function PortfolioPreview() {
 
   // Tile animation
   if (loading) {
-    return <h2 className='loading'>Loading...</h2>;
+    return <h2 className='loading loading-portfolio-preview'>Loading...</h2>;
   }
   return (
     <div className='PortfolioPreview'>

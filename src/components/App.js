@@ -7,12 +7,14 @@ import PortfolioPost from "./Portfolio/PortfolioPost";
 import Blog from "./Blog/Blog";
 import Post from "./Blog/Post";
 import ContactPage from "./ContactPage/ContactPage";
+import Disclaimer from "./Disclaimer";
 
 function App() {
   return (
     <Router>
       <div className='App'>
         <Nav />
+        <Disclaimer />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />

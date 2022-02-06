@@ -1,5 +1,5 @@
-$primary-font: 'Playfair Display', serif, Arial, Helvetica;
-$secondary-font: 'Montserrat', sans-serif, Arial, Helvetica;
+$primary-font: "Playfair Display", serif, Arial, Helvetica;
+$secondary-font: "Montserrat", sans-serif, Arial, Helvetica;
 $primary-color: #000;
 $secondary-color: #fff;
 
@@ -10,22 +10,34 @@ hr {
 }
 
 .loading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  margin: 5rem auto;
+}
+.loading-portfolio-preview {
+  color: #fff;
+}
+
+.disclaimer {
+  width: 100%;
+  padding: 1rem 5rem;
+  text-align: center;
+  background-color: rgb(197, 197, 197);
+  h3 {
+    font-size: 1rem;
+  }
 }
 
 // Set text color based on bg
 @function set-text-color($color) {
-  @if(lightness($color) > 70) {
+  @if (lightness($color) > 70) {
     @return $primary-color;
   } @else {
     @return $secondary-color;
   }
 }
 
-// Set background & text color 
+// Set background & text color
 @mixin set-background($color) {
   background-color: $color;
   color: set-text-color($color);
